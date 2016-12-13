@@ -6,5 +6,18 @@
 
 <hr>
 <h2>Custom Attribute Directive</h2>
-<div appHighlight>Some Text</div>
+<div appHighlight [highlightColor]="'blue'" [defaultColor]="'yellow'">Some Text</div>
+<hr>
+<h1>Structural Derectives</h1>
+<h2>*ngIf</h2>
+<div *ngIf="switch">Conditional Text</div>
+<button (click)="onSwitch()">Switch</button>
+<hr>
+<h2>*ngFor</h2>
+<ul>
+  <li *ngFor="let item of items; let i=index">
+    {{item}} -(Index; {{i}})
+  </li>
+</ul>
+<br><br><br><br><br>
 
